@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+
+:root {
+  --primary-color: #0367A6;
+  --secundary-color: #F2C12E;
+  --text-color: #eeeeee;
+  --text-size: 1.2rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "SUSE", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+}
+
+.top-text {
+  background-color: limegreen;
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  padding: 5px 0px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+nav {
+  padding: 0px 40px;
+  width: 100%;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+ul {
+  text-transform: uppercase;
+  font-size: var(--text-size);
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  list-style: none;
+  color: var(--text-color);
+}
+
+li:hover {
+  font-weight: 600;
+  color: var(--secundary-color);
+  transition: 0.10ms;
+  cursor: pointer;
+}
+
+button {
+  font-size: var(--text-size);
+  padding: .9375rem;
+  border: none;
+  outline: none;
+  background-color: var(--secundary-color);
+  color: var(--text-color);
+  font-weight: 900;
+  border-radius: 3.125rem;
+}
+
+button:hover {
+  background-color: var(--text-color);
+  color: var(--secundary-color);
+  cursor: pointer;
+  transition: 0.10ms;
+}
+
+main {
+  width: 90%;
+  height: fit-content;
+}
+
+.banner-container {
+  height: 500px;
+  width: 100%;
+  background-image: url(/img/banner.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+
+
+.products {
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.product {
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product:hover {
+  cursor: pointer;
+  /* border: 1px solid black; */
+  /* border-radius: 20px; */
+  transform: scale(1.2);
+}
+
+.product img {
+  width: 9.375rem;
+}
+
+.brand {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.first-price {
+  font-size: 0.6rem;
+  text-decoration: line-through;
+}
+
+.final-price {
+  font-weight: 900;
+  color: #dd1a1a;
+}
+
+footer {
+  padding: 0px 40px;
+  width: 100%;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+
+footer span {
+  font-weight: 900;
+}
