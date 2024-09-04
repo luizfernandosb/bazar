@@ -93,7 +93,7 @@ main {
 .banner-container {
   height: 500px;
   width: 100%;
-  background-image: url(/img/banner.png);
+  background-image: url(img/banner.png);
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
